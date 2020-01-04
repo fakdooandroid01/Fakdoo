@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:padding="30dp"
-    tools:context=".login_with_email">
+    tools:context=".LoginWithEmail">
 
     <ImageButton
         android:id="@+id/btnBack"

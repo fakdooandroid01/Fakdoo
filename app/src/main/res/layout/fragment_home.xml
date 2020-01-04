@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EEEEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tbHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_0B2671"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@drawable/logo_white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_corner_textview"
+                android:drawableEnd="@drawable/ic_search_icon"
+                android:fontFamily="@font/italic"
+                android:hint="Serach in Ahmedabad"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="@color/color_707070"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_place"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/semibold"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:text="Ahmedabad"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tbHome"
+            android:orientation="vertical">
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avCategoryLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/colorSkyDarkBlue"
+                app:indicatorName="BallPulseIndicator" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlCategoryList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:overScrollMode="never"
+                android:padding="10dp"
+                android:scrollbars="vertical" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpList"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutDots"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avProductLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/colorSkyDarkBlue"
+                app:indicatorName="BallPulseIndicator"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlProductList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:overScrollMode="never"
+                android:padding="10dp"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
