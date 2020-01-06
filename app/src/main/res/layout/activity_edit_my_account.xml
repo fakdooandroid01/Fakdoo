@@ -166,7 +166,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/semibold"
-        android:text="STATE"
+        android:text="@string/state"
         android:textColor="@color/color_707070"
         android:textSize="12sp" />
 
@@ -176,7 +176,7 @@
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_arrow_drop_down"
         android:fontFamily="@font/regular"
-        android:inputType="phone"
+        android:inputType="text"
         android:text="Gujrat"
         android:textColor="@color/colorBlack"
         android:textSize="15sp" />
@@ -187,7 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/semibold"
-        android:text="CITY"
+        android:text="@string/city"
         android:textColor="@color/color_707070"
         android:textSize="12sp" />
 
@@ -197,7 +197,7 @@
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_arrow_drop_down"
         android:fontFamily="@font/regular"
-        android:inputType="phone"
+        android:inputType="text"
         android:text="Ahmedabad"
         android:textColor="@color/colorBlack"
         android:textSize="15sp" />
@@ -206,7 +206,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:background="@drawable/bg_btn_update"
+        android:background="@drawable/oval_button_orange"
         android:padding="5dp"
         android:text="UPDATE"
         android:textColor="@color/colorWhite"

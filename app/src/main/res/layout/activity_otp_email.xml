@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="15dp"
+    tools:context=".OtpEmailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnOTPEmailClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/app_name"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/final_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp_sent_on_email"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="Sent to abc.techno@gmail.com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/rectangle_white"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:hint="2"
+                    android:inputType="numberPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/rectangle_white"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/rectangle_white"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/rectangle_white"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="numberPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:id="@+id/tvResendCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/resend_code"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTryAgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="end"
+                    android:text="Try again in 30s"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnEmailOTPSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/oval_button_orange"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/regular"
+            android:textSize="18sp"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+</RelativeLayout>

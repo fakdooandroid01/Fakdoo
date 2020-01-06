@@ -11,9 +11,13 @@
     <string name="next">NEXT</string>
     <string name="we_won_t_reveal_your_number_to_anyone_else_nor_use_it_to_send_you_spam">We won\'t reveal your number to anyone else nor use it to send you spam</string>
     <string name="code">CODE</string>
+    <string name="mobile_no">MOBILE NUMBER</string>
     <string name="enter_otp_sent_on_phone">Enter OTP sent on phone</string>
+    <string name="enter_mobile_no">Enter Your Mobile Number</string>
+    <string name="enter_otp_sent_on_email">Enter Your OTP</string>
     <string name="submit">SUBMIT</string>
     <string name="otp_number">OTP NUMBER</string>
+    <string name="resend_code">Resend Code</string>
     <string name="enter_password">Enter Password</string>
     <string name="password">PASSWORD</string>
     <string name="confirm_password">CONFIRM PASSWORD</string>
@@ -25,6 +29,8 @@
     <string name="name">NAME</string>
     <string name="email">EMAIL</string>
     <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="state">STATE</string>
+    <string name="city">CITY</string>
     <string name="i_have_accepted_terms_and_conditions">I have accepted terms and conditions.</string>
     <string name="your_email_address">Your Email address</string>
     <string name="title_activity_details_post">DetailsPostActivity</string>
