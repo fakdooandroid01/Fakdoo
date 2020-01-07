@@ -5,21 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    android:padding="30dp"
+    android:padding="15dp"
     tools:context=".OtpMobileActivity">
 
-    <ImageButton
-        android:layout_marginTop="10dp"
-        android:id="@+id/backButton"
-        android:layout_width="26dp"
-        android:layout_height="18dp"
-        android:background="@drawable/back_arrow" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentRight="true"
-        app:srcCompat="@drawable/final_logo" />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnOTPMobileClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/app_name"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/final_logo" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,15 +36,30 @@
         android:layout_marginTop="140dp"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
+            android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:text="@string/enter_otp_sent_on_phone"
-            android:textColor="@color/colorBlack"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp_sent_on_email"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="Sent to +91 7878787878" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,76 +67,104 @@
             android:layout_marginBottom="40dp"
             android:orientation="vertical">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/otp_number" />
-
             <LinearLayout
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:weightSum="1">
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo1"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
                     android:layout_weight="0.20"
+                    android:background="@drawable/drawable_rectangle_white"
                     android:gravity="center"
-                    android:layout_marginRight="15dp"
+                    android:maxLength="1"
+                    android:hint="2"
                     android:inputType="numberPassword"
-                    android:hint="*"/>
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo2"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
                     android:layout_weight="0.20"
+                    android:background="@drawable/drawable_rectangle_white"
                     android:gravity="center"
-                    android:layout_marginRight="15dp"
+                    android:maxLength="1"
                     android:inputType="numberPassword"
-                    android:hint="*" />
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo3"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
                     android:layout_weight="0.20"
+                    android:background="@drawable/drawable_rectangle_white"
                     android:gravity="center"
-                    android:layout_marginRight="15dp"
+                    android:maxLength="1"
                     android:inputType="numberPassword"
-                    android:hint="*" />
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtOTPNo4"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
                     android:layout_weight="0.20"
+                    android:background="@drawable/drawable_rectangle_white"
                     android:gravity="center"
-                    android:hint="*"
+                    android:maxLength="1"
                     android:inputType="numberPassword"
-                    />
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack" />
 
             </LinearLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:id="@+id/tvResendCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/resend_code"
+                    android:textSize="14sp"
+                   />
+
+                <TextView
+                    android:id="@+id/tvTryAgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="end"
+                    android:text="Try again in 30s"
+                    android:textSize="12sp" />
+            </RelativeLayout>
         </LinearLayout>
 
-
         <TextView
-            android:gravity="center"
-            android:padding="10dp"
-            android:id="@+id/buttonNext"
+            android:id="@+id/btnMobileOTPSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/oval_button_orange"
+            android:background="@drawable/drawable_oval_orange"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/regular"
+            android:textSize="18sp"
             android:text="@string/submit"
             android:textColor="@color/colorWhite" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/we_won_t_reveal_your_number_to_anyone_else_nor_use_it_to_send_you_spam"
-            android:textSize="10dp" />
 
     </LinearLayout>
 </RelativeLayout>

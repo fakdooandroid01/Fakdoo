@@ -229,7 +229,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
                             android:layout_margin="3dp"
-                            android:background="@drawable/oval_button_dark_blue"
+                            android:background="@drawable/drawable_oval_dark_blue"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
                             android:text="VIEW NUMBER"

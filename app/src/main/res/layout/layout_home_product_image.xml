@@ -52,7 +52,7 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:background="@drawable/oval_button_gray"
+                        android:background="@drawable/drawable_oval_gray"
                         android:text="Thaltej"
                         android:textColor="@color/colorWhite" />
 

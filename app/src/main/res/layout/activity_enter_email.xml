@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             android:gravity="center"
-            android:text="@string/enter_otp_sent_on_email"
+            android:text="@string/enter_email"
             android:textColor="@color/colorBlack"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -58,7 +58,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rectangle_white"
+                android:background="@drawable/drawable_rectangle_white"
                 android:padding="7dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/oval_button_orange"
+            android:background="@drawable/drawable_oval_orange"
             android:gravity="center"
             android:padding="15dp"
             android:text="@string/next"

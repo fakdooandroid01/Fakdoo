@@ -10,11 +10,14 @@
     <string name="enter_your_phone">Enter your phone</string>
     <string name="next">NEXT</string>
     <string name="we_won_t_reveal_your_number_to_anyone_else_nor_use_it_to_send_you_spam">We won\'t reveal your number to anyone else nor use it to send you spam</string>
+    <string name="login">LOGIN IN</string>
+    <string name="sign_up">SIGN UP</string>
     <string name="code">CODE</string>
     <string name="mobile_no">MOBILE NUMBER</string>
     <string name="enter_otp_sent_on_phone">Enter OTP sent on phone</string>
     <string name="enter_mobile_no">Enter Your Mobile Number</string>
     <string name="enter_otp_sent_on_email">Enter Your OTP</string>
+    <string name="enter_email">Enter Your Email</string>
     <string name="submit">SUBMIT</string>
     <string name="otp_number">OTP NUMBER</string>
     <string name="resend_code">Resend Code</string>
@@ -49,6 +52,51 @@
     <string name="lbl_take_camera_picture">Take a picture</string>
     <string name="lbl_choose_from_gallery">Choose from gallery</string>
     <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string name="free_post">FREE POST</string>
+    <string name="myAds">My Ads</string>
+    <string name="active">Active</string>
+    <string name="expired">Expired</string>
+    <string name="upgrade_post">UPGRADE POST</string>
+    <string name="premium">Premium</string>
+    <string name="category">CATEGORY:</string>
+    <string name="type">TYPE:</string>
+    <string name="posted_on">POSTED ON</string>
+    <string name="active_till">ACTIVE TILL</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="remove_post">Remove Post</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_plan">Select your plan for Upgrade Ad</string>
+    <string name="redeem_Upgrade">Redeem your plan for Upgrade Ad</string>
+    <string name="upgrade_supreme"><U>UPGRADE AD WITH SUPREME</U></string>
+    <string name="upgrade_premium">UPGRADE AD WITH PREMIUM</string>
+    <string name="redeem_packages">REDEEM PACKAGES</string>
+    <string name="supreme">Supreme</string>
+    <string name="Continue">CONTINUE</string>
+    <string name="better3x">3x better visibility</string>
+    <string name="better2x">2x better visibility</string>
+    <string name="redeem_plan">Choose plan to redeem</string>
+    <string name="remaining">Remaining</string>
+    <string name="ads_pack3">3 Ads pack</string>
+    <string name="ads_pack5">5 Ads pack</string>
+    <string name="ads3">3 Ads</string>
+    <string name="ads1">1 Ads</string>
+    <string name="expiredOn">Expired On Apr-01-2020</string>
+    <string name="done">DONE</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="free">FREE</string>
+    <string name="activeSupreme">ACTIVE AD WITH SUPREME</string>
+    <string name="activePremium">ACTIVE AD WITH PREMIUM</string>
+    <string name="editAds">EDIT AD</string>
+    <string name="reactiveAds">Select your plan for Reactive Ad</string>
+    <string name="free90">Active till 90 days</string>
+    <string name="redeem_reactiveAds">Redeem your plan for Reactive Ad</string>
+
+    <string name="mywishlist">My Wishlist</string>
+<!--    <string name="wishlist_not">YOU DID NOT HAVE </string>-->
+<!--    <string name="free">FREE</string>-->
 
     <!-- font families -->
     <string name="font_family_light">sans-serif-light</string>

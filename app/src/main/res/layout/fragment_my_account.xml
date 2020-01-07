@@ -63,11 +63,11 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/oval_button_orange"
+                android:background="@drawable/drawable_oval_orange"
                 android:fontFamily="@font/semibold"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="LOGIN IN"
+                android:text="@string/login"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp" />
 
@@ -76,11 +76,11 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/oval_button_skyblue"
+                android:background="@drawable/drawable_oval_skyblue"
                 android:fontFamily="@font/semibold"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="SIGN UP"
+                android:text="@string/sign_up"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp" />
 
@@ -289,7 +289,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="25dp"
-                    android:background="@drawable/oval_button_skyblue"
+                    android:background="@drawable/drawable_oval_skyblue"
                     android:text="@string/logout"
                     android:textColor="@color/colorWhite" />
 

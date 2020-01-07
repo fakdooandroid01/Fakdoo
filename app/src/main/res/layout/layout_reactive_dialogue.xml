@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_rectangle_white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/final_logo" />
+
+
+    <View
+        android:layout_width="230dp"
+        android:layout_height="2px"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorGray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_family_regular"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Are you sure want to \nReactive your post?"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/drawable_bg_halfround"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_FB5C00"
+            android:fontFamily="@string/font_family_regular"
+            android:gravity="center_horizontal"
+            android:padding="17dp"
+            android:text="@string/yes"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_family_regular"
+            android:gravity="center_horizontal"
+            android:padding="17dp"
+            android:text="@string/no"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

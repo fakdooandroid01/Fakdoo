@@ -1,0 +1,13 @@
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"
+    android:toDegrees="90" >
+
+    <shape android:shape="line" >
+        <stroke
+            android:dashGap="0dp"
+            android:dashWidth="1dp"
+            android:color="@color/color_D1D1D1"
+            android:width="1dp"/>
+    </shape>
+
+</rotate>
