@@ -95,8 +95,55 @@
     <string name="redeem_reactiveAds">Redeem your plan for Reactive Ad</string>
 
     <string name="mywishlist">My Wishlist</string>
-<!--    <string name="wishlist_not">YOU DID NOT HAVE </string>-->
-<!--    <string name="free">FREE</string>-->
+    <string name="myplan">My Plans</string>
+    <string name="purchase_plan">PURCHASE PLAN</string>
+    <string name="no_plan">YOU DID NOT HAVE\nANY PLANS YET</string>
+    <string name="myplan_supreme">SUPREME</string>
+    <string name="myplan_premium">PREMIUM</string>
+    <string name="pack_id">PACK ID</string>
+    <string name="category_plan">CATEGORY</string>
+    <string name="location">LOCATION</string>
+    <string name="ad_package">AD PACKAGE</string>
+    <string name="purchase_date">PURCHASED DATE</string>
+    <string name="expired_date">EXPIRED DATE</string>
+    <string name="download_invoice">DOWNLOAD INVOICE</string>
+
+    <string name="allplan">All Plans</string>
+    <string name="month">1 month</string>
+    <string name="off">38% off</string>
+    <string name="rs">\u20B9 2495</string>
+
+    <string name="payment_method">Payment Method</string>
+    <string name="settng">Settings</string>
+    <string name="faq">FAQ</string>
+    <string name="change_password">Change Password</string>
+    <string name="legal_policy">Legal &amp; Policy</string>
+    <string name="about_fakdoo">About Fakdoo</string>
+    <string name="share">Share</string>
+    <string name="logout_setting">Logout</string>
+
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="update">UPDATE</string>
+
+    <string name="helpsupport">Help &amp; Support</string>
+    <string name="select_subject">SELECT SUBJECT</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="desc_text">Description must be at least 300 characters long</string>
+    <string name="countword">0/300</string>
+    <string name="verify_email">Your email is not verified.\nPlease verify.</string>
+    <string name="verify">VERIFY</string>
+    <string name="cancelemail">CANCEL</string>
+    <string name="submit_successfully">Submited Successfully</string>
+    <string name="webview">Web View</string>
+    <string name="about">About</string>
+
+    <string name="whatsapp">WhatsApp</string>
+
+    <string name="alert">ALERTS</string>
+    <string name="alert_msg">YOU DID NOT SET \nANY ALERTS</string>
+    <string name="set_alerts">SET ALERTS</string>
+
 
     <!-- font families -->
     <string name="font_family_light">sans-serif-light</string>

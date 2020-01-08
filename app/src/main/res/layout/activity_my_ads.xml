@@ -14,15 +14,16 @@
         android:background="@color/colorWhite">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/tlMyAds"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp">
+                android:layout_height="match_parent">
 
                 <ImageButton
                     android:id="@+id/btnBack"
@@ -66,6 +67,7 @@
                     android:layout_toEndOf="@+id/ibAdsDelete"
                     android:background="@drawable/ic_close"
                     android:contentDescription="@string/app_name" />
+
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -84,8 +86,10 @@
             android:layout_weight="0.50"
             android:gravity="center"
             android:padding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:text="@string/active"
-            android:textColor="@color/color_FB5C00" />
+            android:textColor="@drawable/drawable_tab_textcolor" />
 
         <View
             android:layout_width="1px"
@@ -100,7 +104,7 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/expired"
-            android:textColor="@color/color_707070" />
+            android:textColor="@drawable/drawable_tab_textcolor" />
 
     </LinearLayout>
 

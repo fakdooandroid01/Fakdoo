@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivWishlistImage"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/final_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPremium_Supreme"
+            android:layout_width="65dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/premium"
+            android:padding="3dp"
+            android:text="@string/supreme"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvWishlistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivWishlistImage"
+            android:fontFamily="@font/regular"
+            android:padding="5dp"
+            android:text="1570 Sq. ft"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWishlistName"
+            android:fontFamily="@font/bold"
+            android:padding="5dp"
+            android:text="\u20B9 400"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="sola, Ahmedabad"
+                android:textColor="@color/color_FB5C00"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivFev"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_favorite"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
