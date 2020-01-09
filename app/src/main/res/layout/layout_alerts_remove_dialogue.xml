@@ -18,7 +18,7 @@
         android:layout_width="230dp"
         android:layout_height="2px"
         android:layout_gravity="center"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:background="@color/colorGray" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -35,14 +35,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@drawable/drawable_shadow_white"
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvYes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/color_FB5C00"
+            android:background="@drawable/drawable_left_corner_orange"
             android:fontFamily="@string/font_family_regular"
             android:gravity="center_horizontal"
             android:padding="17dp"
@@ -51,9 +51,11 @@
             android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/drawable_right_corner_gray"
             android:fontFamily="@string/font_family_regular"
             android:gravity="center_horizontal"
             android:padding="17dp"
