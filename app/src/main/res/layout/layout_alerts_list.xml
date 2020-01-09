@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvCategoryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="@string/realty"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tvCategoryName"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAlertNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/drawable_round_orange"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvUsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCategoryName"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="@string/have_used"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/llCatView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUsed"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/SubCatString"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:padding="5dp"
+                        android:text="@string/subcategory"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSubCategory"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/regular"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/subcategory"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llCatView"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/semibold"
+                            android:padding="5dp"
+                            android:text="@string/matching_ads"
+                            android:textSize="14sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvMatchingAdsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="06"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/semibold"
+                            android:padding="5dp"
+                            android:text="@string/posted_on"
+                            android:textSize="14sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPostedOn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/regular"
+                            android:text="Jan-05-2020"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_more"
+                android:contentDescription="@string/app_name" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMatchingAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/drawable_oval_dark_blue"
+                android:fontFamily="@font/regular"
+                android:padding="10dp"
+                android:text="@string/matching_ads"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:drawableStart="@drawable/ic_location_on"
+                android:drawablePadding="5dp"
+                android:text="@string/location"
+                android:textColor="@color/color_FB5C00"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/colorGray" />
+</LinearLayout>

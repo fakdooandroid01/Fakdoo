@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlackAlpha"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/drawable_shadow_white"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEditAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:drawableStart="@drawable/ic_edit_black_24dp"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/semibold"
+            android:padding="20dp"
+            android:text="@string/edit_alert"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvRemoveAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:drawableStart="@drawable/ic_delete_black_24dp"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/semibold"
+            android:padding="20dp"
+            android:text="@string/remove_alert"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_shadow_white"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCancelAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/colorSkyDarkBlue"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

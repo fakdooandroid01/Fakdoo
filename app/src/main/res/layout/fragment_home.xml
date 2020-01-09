@@ -64,6 +64,7 @@
                 android:layout_gravity="center"
                 app:indicatorColor="@color/colorSkyDarkBlue"
                 app:indicatorName="BallPulseIndicator" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rlCategoryList"
                 android:layout_width="match_parent"

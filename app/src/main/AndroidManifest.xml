@@ -10,16 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelpSupportActivity"></activity>
-        <activity android:name=".ChangePasswordActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".PaymentMethodActivity" />
-        <activity android:name=".AllPlanActivity" />
-        <activity
-            android:name=".MyPlanActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MyAdsActivity"
+        <activity android:name=".AlertsRemoveActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +18,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AlertsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutAppActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LegalPolicyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FaqActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HelpSupportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaymentMethodActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllPlanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyPlanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyAdsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".OtpMobileActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -50,7 +80,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CategoryListActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".ProductDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar" />

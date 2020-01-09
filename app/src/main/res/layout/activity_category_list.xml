@@ -8,6 +8,7 @@
     tools:context=".CategoryListActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ablCategoryList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorWhite">
@@ -22,8 +23,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="60dp">
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -34,21 +34,351 @@
                     android:text="@string/choose_a_category"
                     android:textColor="@color/colorBlack"
                     android:textSize="17sp" />
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_close"
+                    android:contentDescription="@string/app_name" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/srlCategoryList"
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rlTypeCategoryList"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/color_D1D1D1"
-            android:overScrollMode="never"
-            android:scrollbars="vertical" />
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRealty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/realty"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/cars"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/bike"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMobileTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/mobile_tab"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/job"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFashionJewels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/fashion_jewelers"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMarket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/market"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/business"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPetsCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/pets_care"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvKids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/kid"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvElectronics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/electronic"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/services"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCommercialVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/commercial_vehicle"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSportsFitness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/sports_fitness"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBicycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/bicycle"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/pg"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPreLease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_close"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/regular"
+                android:padding="17dp"
+                android:text="@string/pre_lease"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGray" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
