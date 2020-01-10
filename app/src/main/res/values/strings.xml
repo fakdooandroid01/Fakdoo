@@ -172,6 +172,11 @@
     <string name="alerts">Alerts</string>
     <string name="remove_alerts">Are you sure want to \nRemove your alert?</string>
 
+    <string name="filter">Filter by</string>
+    <string name="apply">APPLY</string>
+    <string name="reset">RESET</string>
+    <string name="categories">Categories</string>
+
 
     <!-- font families -->
     <string name="font_family_light">sans-serif-light</string>
